@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Recursos/Fondo\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+td{
+    color: white;
+}
+/* Encabezado */
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(255, 191, 103);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .cuarto {
+        flex: 1 1 calc(50% - 1em);
+    }
+    .boton a {
+        padding: 4px 8px; /* Tamaño de padding más pequeño para dispositivos móviles */
+        font-size: 0.7em; /* Tamaño del texto más pequeño para dispositivos móviles */
+    }
+
+    .footer .social-icon .icon-elem {
+        margin: 0 5px;
+    }
+
+    .footer .menu .menu-elem {
+        margin: 0 5px;
+    }
+
+    .footer .text {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuarto {
+        flex: 1 1 100%;
+    }
+}
+/* MEdiio */
+.cuartos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1200px;
+    width: 90%;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.797);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    
+}
+
+.cuarto {
+    flex: 1 1 calc(25% - 1em);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cuarto:hover {
+    transform: scale(1.05);
+}
+
+.cuarto img {
+    width: 100%;
+    height: auto;
+}
+
+.descripcion {
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #f8f8f8;
+}
+/* Pie de Pagina */
+.footer{
+    position: relative;
+    width: 100%;
+    background: #286bcf;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+} 
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: translateY(-10px);
+} 
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+.menu-elem{
+    list-style: none;
+
+}
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+.menu-icon:hover{
+    opacity: 1;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.eslogan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.boton a {
+    display: inline-block;
+    padding: 0.3em 0.01em;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0.5em 0;
+}
+
+.boton a:hover {
+    background-color: #0056b3;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.797);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
